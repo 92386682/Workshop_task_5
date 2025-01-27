@@ -1,8 +1,12 @@
-#WORKSHOP NUMBER 5
+# WORKSHOP NUMBER 5
+
 •	Produce a 'data self-portrait' in a p5.js sketch by making a visualisation that shows something about yourself from a dataset. Use a csv file to store the dataset.
 •	Experiment with different ways to present the data, e.g. using text, images, shapes, or colours.
 •	Make a new repository for your p5.js project on your GitHub account, publish your sketch as a webpage, and include a README file in your repository with a URL to the webpage along with documentation of your work.
-#Workshop Notes
+
+https://92386682.github.io/Workshop_task_5/
+
+## Workshop Notes
 Skateboard view of building up to complex problems
 ##Initial plan (written before coding)
 The initial plan for this workshop is to visualise my most listened to song of 2024. My initial conception is that music can be captured as a simple series of db measurements, which can then be expressed as a cvs file, with an array reflecting the series of sounds from a single song, then converting this raw data as a visual.
@@ -15,7 +19,7 @@ After reading into audio sampling, it seemed that whilst third party software ha
 
 
 
-##Process
+## Process
 Moving the CVS into p5, I began by attempting to create a function that went through the CSV sequentially, moving down the list one by one. Uncovered in class, this took longer than expected until eventually I discovered getString via p5 referencing. Working with a setInterval function and variable, I created a test text() to express each value on a simplified 5 line CSV; printing out the outcome.
 ![47](https://github.com/user-attachments/assets/29f37083-b120-4d8c-af44-19023d184810)
 
@@ -46,6 +50,7 @@ At this point though, I realised I was still using placeholder music data, and w
 
 ##Possible development (beyond this task)
 Running the csv retrieval as an array, so that instead of all lines moving to the same dB time, it would move across the screen dynamically. Pixel by pixel manipulation working with data values, integration of WEBGL 3-dimensional renders.
-##Citations/acknowledgement	
+## Citations/acknowledgement	
+
 https://www.quora.com/How-do-I-convert-an-audio-file-to-a-csv-file
 https://manual.audacityteam.org/man/sample_data_export.html
