@@ -27,14 +27,15 @@ At this point, I moved onto the longer CSV file, and integrated both Db data val
 
 Moving backwards across workshops, I wanted to integrate the CSV variables more deeply into the work, working with the fact that as a whole they were numerical values ranging from -50. to -110. Additionally, I wanted to expand on workshop skills, so I integrate a loop to repeat the lines across the x axis scaling down 0.9
 Beginning with 
-‘  while (origin < width) {
+'
+  while (origin < width) {
     line(origin, 0, origin, output);
     line(origin, 0, origin, -output);
     line(origin,0, origin, -output2);
     line(origin, 0, origin, -output2);
     scale(0.9)
     origin += 10;
-  }’
+  }'
 In theory, this should have repeated the line across the screen. In practice, it erased the line. Whilst the origin shift was working correctly with the loop commented out, I spent time troubleshooting this unsuccessfully, until I replaced the while() with the same function expressed as a for(), which did work successfully, though it accidentally simulated a 3d effect looking along the wavelength instead of 2d across the screen.
 ![53](https://github.com/user-attachments/assets/821d3f4f-d24d-4b70-a004-109a29ab16c0)
 
@@ -42,10 +43,6 @@ After this, it was mainly minor tweaks to the code, and some clean ups. Whilst i
 At this point though, I realised I was still using placeholder music data, and went and replaced the original CSV file with one generated from my most listened to of 2024. 
 
 ![54](https://github.com/user-attachments/assets/46460104-883c-468e-b03a-841553ae678b)
-
-
-##Problems
-
 
 ##Possible development (beyond this task)
 Running the csv retrieval as an array, so that instead of all lines moving to the same dB time, it would move across the screen dynamically. Pixel by pixel manipulation working with data values, integration of WEBGL 3-dimensional renders.
